@@ -3,56 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home - Sachin Tendulkar Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #002b5c, #0050a5);
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .buttons {
+            margin-top: 40px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 25px;
+            margin: 10px;
+            background: white;
+            color: #002b5c;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            width: 180px;
+        }
+
+        a:hover {
+            background: #ffcc00;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="login-container">
-        <h2>Register</h2>
-        <form action="biography.html" method="get" enctype="multipart/form-data">
-            <!-- Username -->
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter username" required>
 
-            <!-- Password -->
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter password" required>
+<h1>Welcome to Sachin Tendulkar Website</h1>
+<p>The Legend of Cricket</p>
 
-            <!-- Email -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter email" required>
+<div class="buttons">
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="biography.html">Biography</a>
+</div>
 
-            <!-- Gender -->
-            <label>Gender:</label>
-            <div class="gender-options">
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label>
-
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-            </div>
-
-            <!-- Profile Picture -->
-            <label for="profile">Profile Picture:</label>
-            <input type="file" id="profile" name="profile" accept="image/*">
-
-            <!-- City Selection -->
-            <label for="city">City:</label>
-            <select id="city" name="city" required>
-                <option value="">Select City</option>
-                <option value="delhi">Delhi</option>
-                <option value="mumbai">Mumbai</option>
-                <option value="chennai">Chennai</option>
-                <option value="bangalore">Bangalore</option>
-                <option value="hyderabad">Hyderabad</option>
-            </select>
-
-            <!-- Register Button -->
-            <button type="submit">Register</button>
-        </form>
-    </div>
 </body>
 </html>
